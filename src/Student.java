@@ -1,6 +1,4 @@
 import javax.swing.*;
-//import java.awt.*;
-//import java.awt.*;
 
 public class Student {
     public static void main(String[] args) {
