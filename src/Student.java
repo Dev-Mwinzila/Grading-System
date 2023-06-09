@@ -1,5 +1,5 @@
 import javax.swing.*;
-import java.awt.*;
+//import java.awt.*;
 //import java.awt.*;
 
 public class Student {
@@ -76,21 +76,24 @@ public class Student {
             if (average >= 80) {
                 grade = 'A';
                 message = "Excellent work";
-            } else if (average >= 70 && average <= 79) {
-                grade = 'B';
-                message = "Good job";
-            } else if (average >= 60 && average <= 69) {
-                grade = 'C';
-                message = "Average";
-            } else if (average >= 50 && average <= 59) {
-                grade = 'D';
-                message = "Work Harder";
+                gradeField.setText(String.valueOf(grade));
             } else {
-                grade = 'F';
-                message = "Fail";
+                if (average >= 70 && average <= 79) {
+                    grade = 'B';
+                    message = "Good job";
+                } else if (average >= 60 && average <= 69) {
+                    grade = 'C';
+                    message = "Average";
+                } else if (average >= 50 && average <= 59) {
+                    grade = 'D';
+                    message = "Work Harder";
+                } else {
+                    grade = 'F';
+                    message = "Fail";
+                }
+                gradeField.setText(String.valueOf(grade));
             }
 
-            gradeField.setText(String.valueOf(grade));
             JOptionPane.showMessageDialog(null, message);
 
         });
