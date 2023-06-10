@@ -107,7 +107,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686317137348</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Student grading with a simple ui">
+      <created>1686335185828</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1686335185828</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -182,5 +189,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Student grading with a simple ui" />
     <option name="LAST_COMMIT_MESSAGE" value="Student grading with a simple ui" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

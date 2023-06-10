@@ -2,12 +2,8 @@ import javax.swing.*;
 
 public class Student {
     public static void main(String[] args) {
-        SwingUtilities.invokeLater(new Runnable() {
-            public void run()
-            {
-               createAndShowUI();
-            }
-        });
+
+        SwingUtilities.invokeLater(Student::createAndShowUI);
     }
 
     private static void createAndShowUI() {
@@ -76,13 +72,13 @@ public class Student {
                 message = "Excellent work";
                 gradeField.setText(String.valueOf(grade));
             } else {
-                if (average >= 70 && average <= 79) {
+                if (average >= 70) {
                     grade = 'B';
                     message = "Good job";
-                } else if (average >= 60 && average <= 69) {
+                } else if (average >= 60) {
                     grade = 'C';
                     message = "Average";
-                } else if (average >= 50 && average <= 59) {
+                } else if (average >= 50) {
                     grade = 'D';
                     message = "Work Harder";
                 } else {
